@@ -1,0 +1,127 @@
+.Clock__container {
+  position: relative;
+  width: 200px;
+  height: 200px;
+}
+
+.Clock__face--number {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-size: 2rem;
+  transform: translateY(-50%);
+}
+
+.Clock__circle {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  border: 4px double #333;
+}
+
+.Clock__center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #333;
+  z-index: 2;
+}
+
+.Clock__arrow--hour {
+  position: absolute;
+  top: 50px;
+  left: 95px;
+  transform-origin: bottom center;
+  width: 10px;
+  height: 50px;
+  background-color: #333;
+}
+
+.Clock__arrow--minute {
+  position: absolute;
+  top: 30px;
+  left: 95px;
+  transform-origin: bottom center;
+  width: 6px;
+  height: 70px;
+  background-color: #333;
+}
+
+.Clock__arrow--second {
+  position: absolute;
+  top: 20px;
+  left: 95px;
+  transform-origin: bottom center;
+  width: 2px;
+  height: 80px;
+  background-color: #f00;
+}
+
+.SUPER_ANIMATION {
+  -webkit-animation: SUPER_ANIMATION 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    both;
+  animation: SUPER_ANIMATION 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@-webkit-keyframes SUPER_ANIMATION {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes SUPER_ANIMATION {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.SUPER_TEXT_ANIMATION {
+  -webkit-animation: SUPER_TEXT_ANIMATION 0.7s
+    cubic-bezier(0.215, 0.61, 0.355, 1) both;
+  animation: SUPER_TEXT_ANIMATION 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+}
+
+@-webkit-keyframes SUPER_TEXT_ANIMATION {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes SUPER_TEXT_ANIMATION {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
