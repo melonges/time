@@ -13,10 +13,6 @@ export const App = () => {
     });
   }, []);
 
-  if (isLoading) {
-    return <p>Loading...</p>;
-  }
-
   return (
     <>
       <audio ref={ref} src="https://dengi-vam.online/DJARBUZ.mp3" autoPlay />
